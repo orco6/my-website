@@ -1,54 +1,71 @@
-
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-
+    <!-- Todo: put here your site title -->
     <title>Or Cohen | Developer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
     <meta name="description" content="[Your name here] | Developer" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: false });
-    </script>
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
 
+    <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
-    <div id="hero" class="jumbotron">
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title" class="load-hidden">
+        <h1 class="hero-title load-hidden">
           Hi, my name is <span class="text-color-main">Or Cohen</span>
           <br />
-          Full Stack Developer
+          Full Stack Developer.
         </h1>
-        <p class="hero-cta" class="load-hidden">
+        <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Hire me</a
+            >Know more</a
           >
         </p>
       </div>
-    </div>
+    </section>
+    <!-- /END Hero Section -->
 
-
+    <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">About me</h2>
+        <h2 class="section-title load-hidden">About me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image">
+            <div class="about-wrapper__image load-hidden">
               <img
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
@@ -60,9 +77,8 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
+            <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-               
                 Graduate of Software Engineering.<br>
                 During the study, I had the honor to receive 4 Certificates of Excellence.<br>
                 I'm a passionate developer who excels in both Frontend and Backend technologies. <br>
@@ -70,12 +86,15 @@
                 Intuitive, deductive and self-taught with attention to details and accuracy. <br>
                 Excellent communication skills and interpersonal relations.
               </p>
+              <!-- <p class="about-wrapper__info-text">
+                Extra Information about you! like hobbies and your goals.
+              </p> -->
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href=""
+                  href="assets/resume.pdf"
                 >
                   View Resume
                 </a>
@@ -85,7 +104,7 @@
         </div>
       </div>
     </section>
-
+    <!-- /END About Section -->
 
     <!-- **** Projects Section **** -->
     <section id="projects">
@@ -416,12 +435,11 @@
       </div>
     </section>
     <!-- /END Projects Section -->
-
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
+        <div class="contact-wrapper load-hidden">
           <p class="contact-wrapper__text">
             orcohen7333@gmail.com
             <br>
@@ -439,35 +457,36 @@
     </section>
     <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-
-          <a rel="noreferrer" href="https://www.linkedin.com/in/or-cohen-6a74081aa/" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="https://github.com/orco6" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
-
-        <hr />
-
-        <p class="footer__text">
-          © 2021 - Developed by
-          <a rel="noreferrer" href="https://github.com/orco6" target="_blank"
-            >Or Cohen</a
-          >
-        </p>
-
-
-
-      </div>
-    </footer>
-    <!-- /END Footer Section -->
+        <!-- **** Footer Section **** -->
+        <footer class="footer navbar-static-bottom">
+          <div class="container">
+            <a rel="noreferrer" href="#top" class="back-to-top">
+              <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+            </a>
+            <div class="social-links">
+    
+              <a rel="noreferrer" href="https://www.linkedin.com/in/or-cohen-6a74081aa/" target="_blank">
+                <i class="fa fa-linkedin fa-inverse"></i>
+              </a>
+              <a rel="noreferrer" href="https://github.com/orco6" target="_blank">
+                <i class="fa fa-github fa-inverse"></i>
+              </a>
+            </div>
+    
+            <hr />
+    
+            <p class="footer__text">
+              © 2021 - Developed by
+              <a rel="noreferrer" href="https://github.com/orco6" target="_blank"
+                >Or Cohen</a
+              >
+            </p>
+    
+    
+    
+          </div>
+        </footer>
+        <!-- /END Footer Section -->
+    <script defer type="module" src="index.js"></script>
   </body>
 </html>
